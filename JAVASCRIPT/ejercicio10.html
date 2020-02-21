@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       /* var frase = prompt("introduce una frase");
+        var frase = frase.toLowerCase();
+        var frase =  frase("") ;
+       // var frase = frase.split("");
+      
+        alert (frase);
+       // var frase2 = frase.reverse();
+        //alert (frase);*/
+function texto()
+{
+	var palabra=prompt("Escribe un palíndromo").toLowerCase();
+ 
+	// eliminamos los espacios en blanco
+	palabra=palabra.replace(/ /g, "");
+ 
+	for (var i=0;i<palabra.length;i++){
+		if(palabra[i]!=palabra[palabra.length-i-1]){
+			return false;
+		}
+	}
+	return true;
+}
+ 
+if(texto())
+{
+	alert("Esto es palíndromo");
+}else{
+	alert("Esto no es palíndromo")
+}
+
+    </script>
+</body>
+</html>

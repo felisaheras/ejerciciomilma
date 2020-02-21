@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+   /* var  num = prompt ("introduce un número");
+    var resultado = comprobar(num);
+    document.write (resultado);
+
+    function comprobar (numero){
+        if ( numero % 2 == 0 ){
+
+            return " par ";
+        }
+        else {
+            return "impar";
+        }
+
+    }
+    
+    */
+    /*
+    var cadena = prompt ("introduce una frase");
+
+    document.write ( info(cadena) );
+
+    function info( frase ) {
+
+        if (frase == frase.toUpperCase()){
+
+            return " la frase está en mayúsculas";
+        }
+        else if (cadena == cadena.toLowerCase()){
+
+            return " la frase está en minúsculas";
+        
+        }
+        else {
+            return " la frase está en mayúsculas y minúculas";
+        }
+    }
+    
+    */
+    
+    var frase = prompt ("introduce una frase");
+
+    document.write ( palindromo(frase));
+
+    function palindromo ( datos){ 
+
+    var frasemin = datos.toLowerCase();//pasa a minuúsculas
+
+    var frasefinal = frasemin.split(" ").split("");//convierte en un array
+
+    var frasesinespacio = frasefinal.reverse();//elimina los espacios en blanco
+
+    if (frasesinespacio == frase) {
+
+        return " es un palíndromo";
+    }
+    else {
+        
+        return " no es un palíndromo";
+    
+    } 
+
+    }
+
+
+    </script>
+</body>
+</html>

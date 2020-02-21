@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function externa(){
+            document.write ("Esto está en la funcion externa <br>");
+
+            function interna (){
+                document.write ( "Esto está en la funcion inerna");
+            }
+            interna ();
+
+        }
+        externa ();
+       // interna();
+    </script>
+</body>
+</html>
